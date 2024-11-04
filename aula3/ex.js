@@ -1,0 +1,1 @@
+console.log('Meu nome é "Kayo Weriber".',"Estou aprendendo Javascript às", 2 ,"da tarde.")

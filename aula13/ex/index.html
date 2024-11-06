@@ -9,9 +9,11 @@
 <body>
     <script>
         const nome=prompt("Digite seu nome completo: ")
+
         //document.write(`Olá ${nome}`)//aparecer para o user no navegador
         //document.body.innerHTML="teste" //zera tudo que está no body da página
         //document.body.innerHTML+=" Olá Kayo" // acrescenta sem apagar
+        
         document.body.innerHTML += `O seu nome é <strong>${nome} </strong><br/>`
         document.body.innerHTML += `Seu nome tem <strong>${nome.length}</strong> letras <br />`;
         document.body.innerHTML += `A segunda letra do seu nome é: <strong>${nome[1]}</strong><br />`;

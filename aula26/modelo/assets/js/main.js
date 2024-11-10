@@ -30,7 +30,7 @@ function tabela(){
                 }else if(imc>=40){
                     resultadoVermelho.innerHTML+=`<p>Seu IMC é <strong>${imc}</strong> e está com <strong>OBESIDADE GRAU 3</strong></p>`
                 }else{
-                    resultadoVermelho.innerHTML+="teste"
+                    resultadoVermelho.innerHTML+="O Valor digitado não é válido"
                 }
             }
         }else if(altura>2.51){

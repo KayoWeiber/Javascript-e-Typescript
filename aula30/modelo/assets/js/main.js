@@ -7,8 +7,8 @@ function dataHoje(){
     const mesTexto=getMesTexto(mes)
     const diaSemanaTexto=getDiasemana(diaSemana)
     const ano=data.getFullYear()
-    const hora=data.getHours()
-    const minutos=data.getMinutes()
+    const hora=zeroAEsquerda(data.getHours())
+    const minutos=zeroAEsquerda(data.getMinutes())
     h1.innerHTML=`<p>${diaSemanaTexto},${diaMes} de ${mesTexto} de ${ano}</p>`
     h1.innerHTML+=`${hora}:${minutos}`
 }

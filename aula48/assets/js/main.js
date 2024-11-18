@@ -34,15 +34,15 @@ function iniciar(){
         },3000)
 
     })
-
+    function timer(tempo){
+        return tempo.toLocaleTimeString("pt-BR",{
+           hour:"2-digit",
+           minute:"2-digit",
+           second:"2-digit",
+           hour12:false
+       }) 
+   }
 }
 
-function timer(tempo){
-     return tempo.toLocaleTimeString("pt-BR",{
-        hour:"2-digit",
-        minute:"2-digit",
-        second:"2-digit",
-        hour12:false
-    }) 
-}
+
 iniciar()

@@ -28,7 +28,7 @@ function retorna(data){
 }
 try{
     const data=new Date("01-01-1970 12:58:12")
-    const hora=retorna()
+    const hora=retorna(data)
     console.log(hora)
 }catch(e){
     console.log("data inválida")

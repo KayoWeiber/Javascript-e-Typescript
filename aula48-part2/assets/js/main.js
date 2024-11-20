@@ -9,7 +9,7 @@ function iniciar(){
     })
 
     function criaTarefa(textoInput){
-        const li=criaLi()
+        const li=criaLi() //Para utilizar no <ul> //Li=lista
         li.innerText=textoInput
         tarefa.appendChild(li)
         limpaInput()
@@ -31,7 +31,7 @@ function iniciar(){
 
     function limpaInput(){
         inputTarefa.value=""
-        inputTarefa.focus()
+        inputTarefa.focus() // para o input ficar selecionado
     }
 
     function criaBotaoApagar(li){
@@ -56,7 +56,7 @@ function iniciar(){
         
         for(let tarefas of liTarefas){
             let tarefaTexto=tarefas.innerText
-            tarefaTexto=tarefaTexto.replace("Apagar","").trim()
+            tarefaTexto=tarefaTexto.replace("Apagar","").trim()//trim é para remover os espaços em brancos
             listaDeTarefas.push(tarefaTexto)
         }
         const tarefaJSON=JSON.stringify(listaDeTarefas) //convert o array em string
